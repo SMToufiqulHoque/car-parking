@@ -93,7 +93,17 @@ const otpHandler=message=>{
         value={setOtp(otp)}
      />)}/>
      </View>
-
+     <View>
+     <Text>Parking Slot</Text>
+     <Controller name="parkingSlot" control={control} 
+     render={({ field: { onChange, onBlur, value } }) => (
+      <TextInput
+        style={styles.input}
+        onBlur={onBlur}
+        onChangeText={onChange}
+        value={value}
+     />)}/>
+     </View>
     
     
      <View>
